@@ -21,9 +21,13 @@ export function App() {
         <Display />
       </div>
       <div className="App">
-        <Specials />
-        <Numbers />
-        <Operators />        
+        <div className='leftButtons'>
+          <Specials />
+          <Numbers />
+        </div>
+        <div className='rightButtons'>
+          <Operators /> 
+        </div>       
       </div>
     </div>
   );

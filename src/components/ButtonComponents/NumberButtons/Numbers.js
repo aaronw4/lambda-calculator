@@ -9,11 +9,11 @@ import { numbers } from '../../../data'
 */
 //Import your array data to from the provided data file
 
-export const Numbers = (props) => {
+export const Numbers = () => {
   const numbersArray = numbers;  
 
   return (
-    <div className='numbers-container'>      
+    <div className='numbers'>      
        {numbersArray.map(data => {
       return <NumberButton buttonData = {data}/>}
   )}

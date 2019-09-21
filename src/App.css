@@ -48,6 +48,11 @@
     box-shadow: 0px 5px #322c2d;
   }
 
+  button:nth-child(10) {
+    width: 200px;
+    border-radius: 50px;
+  }
+
   .specialButtons {
     background-color: #2061B0;
   }

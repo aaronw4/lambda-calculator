@@ -9,6 +9,7 @@ import Logo from "./components/DisplayComponents/Logo";
 
 export function App() {
   const [display, setDisplay] = useState('0');
+
   function displayNum(num) {
     let digit = num.target.value;
     if (display === '0') {
@@ -16,6 +17,11 @@ export function App() {
     } else {
     setDisplay(display + digit);
   }}
+
+  function operatorDisplay(op) {
+    let operator = op.target.value;
+    setDisplay(display + operator);
+  }
 
   return (
     <div className="container">
@@ -29,7 +35,7 @@ export function App() {
           <Numbers displayNum={displayNum}/>
         </div>
         <div className='rightButtons'>
-          <Operators /> 
+          <Operators operatorDisplay={operatorDisplay}/> 
         </div>       
       </div>
     </div>

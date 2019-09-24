@@ -11,8 +11,11 @@ export function App() {
   const [display, setDisplay] = useState('0');
   function displayNum(num) {
     let digit = num.target.value;
+    if (display === '0') {
+      setDisplay(digit);
+    } else {
     setDisplay(display + digit);
-  }
+  }}
 
   return (
     <div className="container">

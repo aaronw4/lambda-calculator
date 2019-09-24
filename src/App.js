@@ -20,7 +20,30 @@ export function App() {
 
   function operatorDisplay(op) {
     let operator = op.target.value;
+    if (operator === '=') {
+      let formula = display;
+      let newFormula = formula.replace('x','*');
+      let solution = eval(newFormula);
+      setDisplay(solution);
+    } else {
     setDisplay(display + operator);
+  }}
+
+  function displaySpecial(sp) {
+    let special = sp.target.value;
+    if (special === 'C') {
+      setDisplay('0');
+    } 
+    else if (special === "+/-") {
+      let number = Number(display);
+      let newNumber = -1 * number;
+      let string  = newNumber.toString();
+      setDisplay(string);
+    }
+    else if (special === '%') {
+      let solution = Number(display) / 100;
+      setDisplay(solution);
+    }
   }
 
   return (
@@ -31,7 +54,7 @@ export function App() {
       </div>
       <div className="App">
         <div className='leftButtons'>
-          <Specials />
+          <Specials displaySpecial={displaySpecial}/>
           <Numbers displayNum={displayNum}/>
         </div>
         <div className='rightButtons'>

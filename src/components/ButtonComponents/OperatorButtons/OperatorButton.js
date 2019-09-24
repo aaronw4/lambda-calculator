@@ -2,7 +2,7 @@ import React from "react";
 
 export const OperatorButton = (props) => {
   return (
-    <button className='buttons operatorButtons'>
+    <button className='buttons operatorButtons' value={props.buttonData}>
       {props.buttonData}
     </button>
   );

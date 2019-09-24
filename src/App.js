@@ -9,6 +9,10 @@ import Logo from "./components/DisplayComponents/Logo";
 
 export function App() {
   const [display, setDisplay] = useState('0');
+  function displayNum(num) {
+    let digit = num.target.value;
+    setDisplay(display + digit);
+  }
 
   return (
     <div className="container">
@@ -19,7 +23,7 @@ export function App() {
       <div className="App">
         <div className='leftButtons'>
           <Specials />
-          <Numbers />
+          <Numbers displayNum={displayNum}/>
         </div>
         <div className='rightButtons'>
           <Operators /> 

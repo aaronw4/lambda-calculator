@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/lambda-calculator/static/css/main.b66e5c03.chunk.css",
+    "main.js": "/lambda-calculator/static/js/main.38b91b23.chunk.js",
+    "main.js.map": "/lambda-calculator/static/js/main.38b91b23.chunk.js.map",
+    "runtime~main.js": "/lambda-calculator/static/js/runtime~main.78766c17.js",
+    "runtime~main.js.map": "/lambda-calculator/static/js/runtime~main.78766c17.js.map",
+    "static/js/2.19c4ce76.chunk.js": "/lambda-calculator/static/js/2.19c4ce76.chunk.js",
+    "static/js/2.19c4ce76.chunk.js.map": "/lambda-calculator/static/js/2.19c4ce76.chunk.js.map",
+    "index.html": "/lambda-calculator/index.html",
+    "precache-manifest.0df10e8cf3c51fb918b2bb0fe4b29af5.js": "/lambda-calculator/precache-manifest.0df10e8cf3c51fb918b2bb0fe4b29af5.js",
+    "service-worker.js": "/lambda-calculator/service-worker.js",
+    "static/css/main.b66e5c03.chunk.css.map": "/lambda-calculator/static/css/main.b66e5c03.chunk.css.map"
+  }
+}
